@@ -4,16 +4,26 @@
 	<title>Learn Enough JavaScript</title>
 	<meta charset="uft-8">
 	<script>
-	    let WeekdayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+	    function dayName(date){
+		let daysOfTheWeek[
+		    "Sunday", 
+		    "Monday", 
+		    "Tuesday",
+		    "Wednesday", 
+		    "Thursday", 
+		    "Friday", 
+		    "Saturday"
+		]
+		return daysOfTheWeek[date.getDay()]
+
+	    }
 	    let now = new Date()
-	    let day = WeekdayName[now.getDay()]
-	    alert(`Hello, world! Happy ${day}`);
+	    alert(`Hello, world! Happy ${dayName(now)}`);
 	    console.log("Everything is working");
-	</script>s
+	</script>
     </head>
     <body>
 	<h1>Hello, world!</h1>
 	<p>This page includes an alert written in JavaScript.</p>
     </body>
 </html>
-
