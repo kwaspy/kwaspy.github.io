@@ -11,3 +11,6 @@ function dayName(date){
 		return daysOfTheWeek[date.getDay()];
 	    }
 
+function greeting(date){
+	return `Hello, world! Happy ${dayName(date)}`;
+}
